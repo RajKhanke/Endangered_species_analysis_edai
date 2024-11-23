@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ffe624e1f2e3b29209c4094154ed04b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ffe624e1f2e3b29209c4094154ed04b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ffe624e1f2e3b29209c4094154ed04b = L.map(
+                "map_5ffe624e1f2e3b29209c4094154ed04b",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c7a59b9f38f22e105514454aac6164c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9c7a59b9f38f22e105514454aac6164c.addTo(map_5ffe624e1f2e3b29209c4094154ed04b);
+        
+    
+            var marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_011f38c3bfb6be8c6fcaff02189a75c8 = L.marker(
+                [22.3511, 78.6677],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_75ce96cf8623439a9f7629230eb6fd27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_011f38c3bfb6be8c6fcaff02189a75c8.setIcon(icon_75ce96cf8623439a9f7629230eb6fd27);
+        
+    
+        var popup_f4b2c645df77799d0021b92102569b08 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_7c0814758f4f5e019085e6a3ecf6a98a = $(`<div id="html_7c0814758f4f5e019085e6a3ecf6a98a" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Bengal Tiger<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 01-01-2022<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Bengal tiger was driven to extinction due to extensive habitat loss and poaching for their skin and bones.     </div>`)[0];
+                popup_f4b2c645df77799d0021b92102569b08.setContent(html_7c0814758f4f5e019085e6a3ecf6a98a);
+            
+        
+
+        marker_011f38c3bfb6be8c6fcaff02189a75c8.bindPopup(popup_f4b2c645df77799d0021b92102569b08)
+        ;
+
+        
+    
+    
+            marker_011f38c3bfb6be8c6fcaff02189a75c8.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Bengal Tiger<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 01-01-2022<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Bengal tiger was driven to extinction due to extensive habitat loss and poaching for their skin and bones.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d35e0485410103df54f29dbbab8ea94 = L.marker(
+                [26.2006, 92.9376],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_2c9494a35ab6d2ae7e74eb61c99fd56a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5d35e0485410103df54f29dbbab8ea94.setIcon(icon_2c9494a35ab6d2ae7e74eb61c99fd56a);
+        
+    
+        var popup_82f08be15c58cf56254d011a67fa1c45 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_e9f56cf3d232d437f8171d57b3a687a5 = $(`<div id="html_e9f56cf3d232d437f8171d57b3a687a5" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Rhinoceros<br>     <b>Cause of Extinction:</b> Hunting<br>     <b>Last Sighting Date:</b> 15-05-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian rhinoceros, once abundant in the grasslands of India, was hunted to extinction for its valuable horn.     </div>`)[0];
+                popup_82f08be15c58cf56254d011a67fa1c45.setContent(html_e9f56cf3d232d437f8171d57b3a687a5);
+            
+        
+
+        marker_5d35e0485410103df54f29dbbab8ea94.bindPopup(popup_82f08be15c58cf56254d011a67fa1c45)
+        ;
+
+        
+    
+    
+            marker_5d35e0485410103df54f29dbbab8ea94.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Rhinoceros<br>
+    <b>Cause of Extinction:</b> Hunting<br>
+    <b>Last Sighting Date:</b> 15-05-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian rhinoceros, once abundant in the grasslands of India, was hunted to extinction for its valuable horn.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b88692231b4f420fdd12f9e24939830 = L.marker(
+                [25.0961, 85.3131],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_1e5c0d4f201af5d4399a761d1f1664cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b88692231b4f420fdd12f9e24939830.setIcon(icon_1e5c0d4f201af5d4399a761d1f1664cd);
+        
+    
+        var popup_3bcb327699eac6edf278147a0bf116ad = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_a7d6d33b14e805c5c1ff945ef40f8b58 = $(`<div id="html_a7d6d33b14e805c5c1ff945ef40f8b58" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Cheetah<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 20-07-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian cheetah faced rapid habitat loss and decline in prey species, leading to its extinction.     </div>`)[0];
+                popup_3bcb327699eac6edf278147a0bf116ad.setContent(html_a7d6d33b14e805c5c1ff945ef40f8b58);
+            
+        
+
+        marker_4b88692231b4f420fdd12f9e24939830.bindPopup(popup_3bcb327699eac6edf278147a0bf116ad)
+        ;
+
+        
+    
+    
+            marker_4b88692231b4f420fdd12f9e24939830.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Cheetah<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 20-07-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian cheetah faced rapid habitat loss and decline in prey species, leading to its extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2636258d7751350115fe2809943f0fc4 = L.marker(
+                [21.1466, 79.0889],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_3f6387bb018e8af7f0f38e55419f0dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2636258d7751350115fe2809943f0fc4.setIcon(icon_3f6387bb018e8af7f0f38e55419f0dac);
+        
+    
+        var popup_9d6f957232284a434b2ae175dab6aa0c = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_250437e957605287e2cc2a4a154beaed = $(`<div id="html_250437e957605287e2cc2a4a154beaed" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Dhole<br>     <b>Cause of Extinction:</b> Human-Wildlife Conflict<br>     <b>Last Sighting Date:</b> 10-03-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The dhole, also known as the Indian wild dog, succumbed to conflicts with humans and loss of prey.     </div>`)[0];
+                popup_9d6f957232284a434b2ae175dab6aa0c.setContent(html_250437e957605287e2cc2a4a154beaed);
+            
+        
+
+        marker_2636258d7751350115fe2809943f0fc4.bindPopup(popup_9d6f957232284a434b2ae175dab6aa0c)
+        ;
+
+        
+    
+    
+            marker_2636258d7751350115fe2809943f0fc4.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Dhole<br>
+    <b>Cause of Extinction:</b> Human-Wildlife Conflict<br>
+    <b>Last Sighting Date:</b> 10-03-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The dhole, also known as the Indian wild dog, succumbed to conflicts with humans and loss of prey.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac7d4509c7beaf2b1623f051b1bde811 = L.marker(
+                [20.5937, 78.9629],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_54fc33a5f30a7fece976248fc2c011c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ac7d4509c7beaf2b1623f051b1bde811.setIcon(icon_54fc33a5f30a7fece976248fc2c011c5);
+        
+    
+        var popup_2dc4b556abae582fa7474e52b31dd24d = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_70986d0d5f66e9832e44c2a9167c56b7 = $(`<div id="html_70986d0d5f66e9832e44c2a9167c56b7" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Elephant<br>     <b>Cause of Extinction:</b> Habitat Fragmentation<br>     <b>Last Sighting Date:</b> 28-02-2023<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian elephant, facing habitat fragmentation and poaching, sadly went extinct.     </div>`)[0];
+                popup_2dc4b556abae582fa7474e52b31dd24d.setContent(html_70986d0d5f66e9832e44c2a9167c56b7);
+            
+        
+
+        marker_ac7d4509c7beaf2b1623f051b1bde811.bindPopup(popup_2dc4b556abae582fa7474e52b31dd24d)
+        ;
+
+        
+    
+    
+            marker_ac7d4509c7beaf2b1623f051b1bde811.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Elephant<br>
+    <b>Cause of Extinction:</b> Habitat Fragmentation<br>
+    <b>Last Sighting Date:</b> 28-02-2023<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian elephant, facing habitat fragmentation and poaching, sadly went extinct.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_858d30e1422bc9c2420a472c7928d332 = L.marker(
+                [27.5385, 88.3639],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_37bd405bcd3efa97ec0033a32a3acb58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_858d30e1422bc9c2420a472c7928d332.setIcon(icon_37bd405bcd3efa97ec0033a32a3acb58);
+        
+    
+        var popup_b6561c93240bfd628bac3e979b231463 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_70a4a22f7911d7762c1d8c39042ae8cb = $(`<div id="html_70a4a22f7911d7762c1d8c39042ae8cb" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Red Panda<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 05-11-2017<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The charming red panda could not survive the rapid destruction of its bamboo forest habitat.     </div>`)[0];
+                popup_b6561c93240bfd628bac3e979b231463.setContent(html_70a4a22f7911d7762c1d8c39042ae8cb);
+            
+        
+
+        marker_858d30e1422bc9c2420a472c7928d332.bindPopup(popup_b6561c93240bfd628bac3e979b231463)
+        ;
+
+        
+    
+    
+            marker_858d30e1422bc9c2420a472c7928d332.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Red Panda<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 05-11-2017<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The charming red panda could not survive the rapid destruction of its bamboo forest habitat.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a81eda53ceb993449474a66d07daaeb1 = L.marker(
+                [23.8859, 79.5839],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_e3e4c9d88cb24919eda3a5f4a559966e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a81eda53ceb993449474a66d07daaeb1.setIcon(icon_e3e4c9d88cb24919eda3a5f4a559966e);
+        
+    
+        var popup_8e605bd712491c1ce1435f3b7bfb6830 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_d45dbf2e525f483eb721a6fad683160e = $(`<div id="html_d45dbf2e525f483eb721a6fad683160e" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Wolf<br>     <b>Cause of Extinction:</b> Human-Wildlife Conflict<br>     <b>Last Sighting Date:</b> 12-09-2022<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian wolf faced challenges in coexisting with expanding human populations, leading to its extinction.     </div>`)[0];
+                popup_8e605bd712491c1ce1435f3b7bfb6830.setContent(html_d45dbf2e525f483eb721a6fad683160e);
+            
+        
+
+        marker_a81eda53ceb993449474a66d07daaeb1.bindPopup(popup_8e605bd712491c1ce1435f3b7bfb6830)
+        ;
+
+        
+    
+    
+            marker_a81eda53ceb993449474a66d07daaeb1.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Wolf<br>
+    <b>Cause of Extinction:</b> Human-Wildlife Conflict<br>
+    <b>Last Sighting Date:</b> 12-09-2022<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian wolf faced challenges in coexisting with expanding human populations, leading to its extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ff8f15d17b6c979777a337a11a7efc4 = L.marker(
+                [25.4358, 81.8463],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_5be1854bb62aac8cc7d99a5e5fca0dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4ff8f15d17b6c979777a337a11a7efc4.setIcon(icon_5be1854bb62aac8cc7d99a5e5fca0dd6);
+        
+    
+        var popup_113f9b3dfadcc9e00c5cf29fd5686051 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_67665944604b1f474c234a6cdd39ff16 = $(`<div id="html_67665944604b1f474c234a6cdd39ff16" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Gharial<br>     <b>Cause of Extinction:</b> Habitat Destruction<br>     <b>Last Sighting Date:</b> 17-08-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian gharial faced extinction due to habitat destruction and river pollution.     </div>`)[0];
+                popup_113f9b3dfadcc9e00c5cf29fd5686051.setContent(html_67665944604b1f474c234a6cdd39ff16);
+            
+        
+
+        marker_4ff8f15d17b6c979777a337a11a7efc4.bindPopup(popup_113f9b3dfadcc9e00c5cf29fd5686051)
+        ;
+
+        
+    
+    
+            marker_4ff8f15d17b6c979777a337a11a7efc4.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Gharial<br>
+    <b>Cause of Extinction:</b> Habitat Destruction<br>
+    <b>Last Sighting Date:</b> 17-08-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian gharial faced extinction due to habitat destruction and river pollution.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e1b382b67ad64357c7ba8664c719ae1 = L.marker(
+                [23.4717, 87.1789],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_2a6352f35bfcb1b9abc3eb3eed94420c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e1b382b67ad64357c7ba8664c719ae1.setIcon(icon_2a6352f35bfcb1b9abc3eb3eed94420c);
+        
+    
+        var popup_4e95eea337375c371c2b2acd5708d4ad = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_922a6113562a250409f0f480ff53221b = $(`<div id="html_922a6113562a250409f0f480ff53221b" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Pink-headed Duck<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 30-04-2016<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The elusive pink-headed duck saw its wetland habitats disappear, contributing to its extinction.     </div>`)[0];
+                popup_4e95eea337375c371c2b2acd5708d4ad.setContent(html_922a6113562a250409f0f480ff53221b);
+            
+        
+
+        marker_5e1b382b67ad64357c7ba8664c719ae1.bindPopup(popup_4e95eea337375c371c2b2acd5708d4ad)
+        ;
+
+        
+    
+    
+            marker_5e1b382b67ad64357c7ba8664c719ae1.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Pink-headed Duck<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 30-04-2016<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The elusive pink-headed duck saw its wetland habitats disappear, contributing to its extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1abe848dc86e777d16606580c517b8cf = L.marker(
+                [13.9201, 75.7848],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_e45b756cf9b8d3fbc42d380cb7742aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1abe848dc86e777d16606580c517b8cf.setIcon(icon_e45b756cf9b8d3fbc42d380cb7742aa1);
+        
+    
+        var popup_ce8ed30efd484bf77497bae7852b0834 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_4607cd3d64e05136893b3598e9cde034 = $(`<div id="html_4607cd3d64e05136893b3598e9cde034" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Sumatran Rhinoceros<br>     <b>Cause of Extinction:</b> Poaching<br>     <b>Last Sighting Date:</b> 10-12-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Sumatran rhinoceros succumbed to poaching and habitat challenges.     </div>`)[0];
+                popup_ce8ed30efd484bf77497bae7852b0834.setContent(html_4607cd3d64e05136893b3598e9cde034);
+            
+        
+
+        marker_1abe848dc86e777d16606580c517b8cf.bindPopup(popup_ce8ed30efd484bf77497bae7852b0834)
+        ;
+
+        
+    
+    
+            marker_1abe848dc86e777d16606580c517b8cf.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Sumatran Rhinoceros<br>
+    <b>Cause of Extinction:</b> Poaching<br>
+    <b>Last Sighting Date:</b> 10-12-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Sumatran rhinoceros succumbed to poaching and habitat challenges.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc557847aaab6bbfc52b4a06c4154ed4 = L.marker(
+                [21.7645, 70.502],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_c06d46a463fd1f2192ccaf80979fc944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dc557847aaab6bbfc52b4a06c4154ed4.setIcon(icon_c06d46a463fd1f2192ccaf80979fc944);
+        
+    
+        var popup_20649aa31132028adf2b70ecfe5c4e79 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_d338604ee93ecfb5c4fb6360aaaa8b4c = $(`<div id="html_d338604ee93ecfb5c4fb6360aaaa8b4c" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Lion<br>     <b>Cause of Extinction:</b> Hunting<br>     <b>Last Sighting Date:</b> 22-10-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The majestic Indian lion fell victim to excessive hunting and habitat loss.     </div>`)[0];
+                popup_20649aa31132028adf2b70ecfe5c4e79.setContent(html_d338604ee93ecfb5c4fb6360aaaa8b4c);
+            
+        
+
+        marker_dc557847aaab6bbfc52b4a06c4154ed4.bindPopup(popup_20649aa31132028adf2b70ecfe5c4e79)
+        ;
+
+        
+    
+    
+            marker_dc557847aaab6bbfc52b4a06c4154ed4.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Lion<br>
+    <b>Cause of Extinction:</b> Hunting<br>
+    <b>Last Sighting Date:</b> 22-10-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The majestic Indian lion fell victim to excessive hunting and habitat loss.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67fbfd6e4bec65182f9e9f174d9d1627 = L.marker(
+                [22.3458, 85.6739],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_2d88eb3d6626898d7c87fd569ab7de5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_67fbfd6e4bec65182f9e9f174d9d1627.setIcon(icon_2d88eb3d6626898d7c87fd569ab7de5f);
+        
+    
+        var popup_4af09b3f58708b7ba1b264ac5b993fcc = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b520d7f8138361cf51ad3e0a7b534740 = $(`<div id="html_b520d7f8138361cf51ad3e0a7b534740" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Sloth Bear<br>     <b>Cause of Extinction:</b> Habitat Destruction<br>     <b>Last Sighting Date:</b> 07-06-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian sloth bear faced extensive habitat destruction, leading to its tragic extinction.     </div>`)[0];
+                popup_4af09b3f58708b7ba1b264ac5b993fcc.setContent(html_b520d7f8138361cf51ad3e0a7b534740);
+            
+        
+
+        marker_67fbfd6e4bec65182f9e9f174d9d1627.bindPopup(popup_4af09b3f58708b7ba1b264ac5b993fcc)
+        ;
+
+        
+    
+    
+            marker_67fbfd6e4bec65182f9e9f174d9d1627.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Sloth Bear<br>
+    <b>Cause of Extinction:</b> Habitat Destruction<br>
+    <b>Last Sighting Date:</b> 07-06-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian sloth bear faced extensive habitat destruction, leading to its tragic extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b49dc14226bebfd36cd6a318aef74ff = L.marker(
+                [25.4358, 70.3206],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_f9f8f4fee365025c122c1abcb942ac61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b49dc14226bebfd36cd6a318aef74ff.setIcon(icon_f9f8f4fee365025c122c1abcb942ac61);
+        
+    
+        var popup_bac314d36a9bf6e4514d376f3ff8cd94 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_ad897b35fcae680ab832ef2c45ab7c3a = $(`<div id="html_ad897b35fcae680ab832ef2c45ab7c3a" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Great Indian Bustard<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 14-12-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Great Indian Bustard could not survive the rapid loss of its grassland habitat.     </div>`)[0];
+                popup_bac314d36a9bf6e4514d376f3ff8cd94.setContent(html_ad897b35fcae680ab832ef2c45ab7c3a);
+            
+        
+
+        marker_0b49dc14226bebfd36cd6a318aef74ff.bindPopup(popup_bac314d36a9bf6e4514d376f3ff8cd94)
+        ;
+
+        
+    
+    
+            marker_0b49dc14226bebfd36cd6a318aef74ff.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Great Indian Bustard<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 14-12-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Great Indian Bustard could not survive the rapid loss of its grassland habitat.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b619304e6096743e3f6f43542ed9c635 = L.marker(
+                [26.4499, 74.6399],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_c1176d2be744e6d275686ef69f97ae85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b619304e6096743e3f6f43542ed9c635.setIcon(icon_c1176d2be744e6d275686ef69f97ae85);
+        
+    
+        var popup_4b9a4acc6fed83e4d505026664f0fc6c = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b03c37ce5ead261cdaea37688c6d21dd = $(`<div id="html_b03c37ce5ead261cdaea37688c6d21dd" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Gazelle<br>     <b>Cause of Extinction:</b> Overhunting<br>     <b>Last Sighting Date:</b> 18-08-2017<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian gazelle faced relentless hunting, pushing it to extinction.     </div>`)[0];
+                popup_4b9a4acc6fed83e4d505026664f0fc6c.setContent(html_b03c37ce5ead261cdaea37688c6d21dd);
+            
+        
+
+        marker_b619304e6096743e3f6f43542ed9c635.bindPopup(popup_4b9a4acc6fed83e4d505026664f0fc6c)
+        ;
+
+        
+    
+    
+            marker_b619304e6096743e3f6f43542ed9c635.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Gazelle<br>
+    <b>Cause of Extinction:</b> Overhunting<br>
+    <b>Last Sighting Date:</b> 18-08-2017<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian gazelle faced relentless hunting, pushing it to extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b85b5731f004d2e8e40ec1595ab87cf1 = L.marker(
+                [20.8939, 75.9171],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_e6b5bd86061bd5ab439ffd7ece0e3416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b85b5731f004d2e8e40ec1595ab87cf1.setIcon(icon_e6b5bd86061bd5ab439ffd7ece0e3416);
+        
+    
+        var popup_42c30aa8a9c779a47ef9e4c47adcd58f = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_effccefe150d4522d02481a7e176ddcb = $(`<div id="html_effccefe150d4522d02481a7e176ddcb" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Pangolin<br>     <b>Cause of Extinction:</b> Illegal Wildlife Trade<br>     <b>Last Sighting Date:</b> 08-07-2022<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian pangolin, a victim of the illegal wildlife trade, sadly reached extinction.     </div>`)[0];
+                popup_42c30aa8a9c779a47ef9e4c47adcd58f.setContent(html_effccefe150d4522d02481a7e176ddcb);
+            
+        
+
+        marker_b85b5731f004d2e8e40ec1595ab87cf1.bindPopup(popup_42c30aa8a9c779a47ef9e4c47adcd58f)
+        ;
+
+        
+    
+    
+            marker_b85b5731f004d2e8e40ec1595ab87cf1.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Pangolin<br>
+    <b>Cause of Extinction:</b> Illegal Wildlife Trade<br>
+    <b>Last Sighting Date:</b> 08-07-2022<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian pangolin, a victim of the illegal wildlife trade, sadly reached extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b35f9d4af013aa86deb511a8d31d244 = L.marker(
+                [30.0668, 79.0193],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_229a294e1b9f0df4d6024fd43ea6218d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b35f9d4af013aa86deb511a8d31d244.setIcon(icon_229a294e1b9f0df4d6024fd43ea6218d);
+        
+    
+        var popup_030aacb6c7de82a3e68cda3766c85e96 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b8c0263bb7c4406f7ff89f19ff23a5d9 = $(`<div id="html_b8c0263bb7c4406f7ff89f19ff23a5d9" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Himalayan Quail<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 01-03-2016<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Himalayan quail disappeared due to the destruction of its specific montane habitats.     </div>`)[0];
+                popup_030aacb6c7de82a3e68cda3766c85e96.setContent(html_b8c0263bb7c4406f7ff89f19ff23a5d9);
+            
+        
+
+        marker_1b35f9d4af013aa86deb511a8d31d244.bindPopup(popup_030aacb6c7de82a3e68cda3766c85e96)
+        ;
+
+        
+    
+    
+            marker_1b35f9d4af013aa86deb511a8d31d244.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Himalayan Quail<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 01-03-2016<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Himalayan quail disappeared due to the destruction of its specific montane habitats.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be5281363d081f4f68caf27c72b89f32 = L.marker(
+                [23.2599, 77.4126],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_dff30a2f4acc848fa317cc409d52e1c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_be5281363d081f4f68caf27c72b89f32.setIcon(icon_dff30a2f4acc848fa317cc409d52e1c2);
+        
+    
+        var popup_b62861f42fce920a4c228148586f1f6f = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_96a9705c0194e0dbbe993dd63ab8066b = $(`<div id="html_96a9705c0194e0dbbe993dd63ab8066b" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Blackbuck<br>     <b>Cause of Extinction:</b> Overhunting<br>     <b>Last Sighting Date:</b> 25-10-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Excessive hunting led to the extinction of the Indian blackbuck.     </div>`)[0];
+                popup_b62861f42fce920a4c228148586f1f6f.setContent(html_96a9705c0194e0dbbe993dd63ab8066b);
+            
+        
+
+        marker_be5281363d081f4f68caf27c72b89f32.bindPopup(popup_b62861f42fce920a4c228148586f1f6f)
+        ;
+
+        
+    
+    
+            marker_be5281363d081f4f68caf27c72b89f32.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Blackbuck<br>
+    <b>Cause of Extinction:</b> Overhunting<br>
+    <b>Last Sighting Date:</b> 25-10-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Excessive hunting led to the extinction of the Indian blackbuck.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_887bc1845d3115198280cd897b29b231 = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_f4b53e83d61277602685bf2f7b7afba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_887bc1845d3115198280cd897b29b231.setIcon(icon_f4b53e83d61277602685bf2f7b7afba9);
+        
+    
+        var popup_1704542543e2588bc88e800e53415e8c = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_68a9df1cc68fae1e7e8ca914744f57d8 = $(`<div id="html_68a9df1cc68fae1e7e8ca914744f57d8" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Spotted Deer<br>     <b>Cause of Extinction:</b> Habitat Fragmentation<br>     <b>Last Sighting Date:</b> 15-06-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat fragmentation forced the Indian spotted deer to extinction.     </div>`)[0];
+                popup_1704542543e2588bc88e800e53415e8c.setContent(html_68a9df1cc68fae1e7e8ca914744f57d8);
+            
+        
+
+        marker_887bc1845d3115198280cd897b29b231.bindPopup(popup_1704542543e2588bc88e800e53415e8c)
+        ;
+
+        
+    
+    
+            marker_887bc1845d3115198280cd897b29b231.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Spotted Deer<br>
+    <b>Cause of Extinction:</b> Habitat Fragmentation<br>
+    <b>Last Sighting Date:</b> 15-06-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat fragmentation forced the Indian spotted deer to extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93f8ed615306a7116630ac7c2fab670f = L.marker(
+                [14.167, 75.0403],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_9b0f7efd34bbda76ca1c7e7536ed28f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_93f8ed615306a7116630ac7c2fab670f.setIcon(icon_9b0f7efd34bbda76ca1c7e7536ed28f3);
+        
+    
+        var popup_36549d66886fbecdca7a60eebf6a430e = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_e88ce68c2a9e8274b7ebd741b3036b39 = $(`<div id="html_e88ce68c2a9e8274b7ebd741b3036b39" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Star Tortoise<br>     <b>Cause of Extinction:</b> Wildlife Trade<br>     <b>Last Sighting Date:</b> 30-09-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian star tortoise fell prey to the illegal wildlife trade.     </div>`)[0];
+                popup_36549d66886fbecdca7a60eebf6a430e.setContent(html_e88ce68c2a9e8274b7ebd741b3036b39);
+            
+        
+
+        marker_93f8ed615306a7116630ac7c2fab670f.bindPopup(popup_36549d66886fbecdca7a60eebf6a430e)
+        ;
+
+        
+    
+    
+            marker_93f8ed615306a7116630ac7c2fab670f.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Star Tortoise<br>
+    <b>Cause of Extinction:</b> Wildlife Trade<br>
+    <b>Last Sighting Date:</b> 30-09-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian star tortoise fell prey to the illegal wildlife trade.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d023c9aca0f29467b4203f6a0fc00dc9 = L.marker(
+                [24.9036, 72.6262],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_501d3805bc2111ca00448cf06077ce92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d023c9aca0f29467b4203f6a0fc00dc9.setIcon(icon_501d3805bc2111ca00448cf06077ce92);
+        
+    
+        var popup_0cc729ca416ca1455aa3432e3f0c9aa7 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_e47f6ccf4310f2654b7770848b6070ae = $(`<div id="html_e47f6ccf4310f2654b7770848b6070ae" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Asiatic Wild Ass<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 05-05-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss and limited water sources drove the Asiatic wild ass to extinction.     </div>`)[0];
+                popup_0cc729ca416ca1455aa3432e3f0c9aa7.setContent(html_e47f6ccf4310f2654b7770848b6070ae);
+            
+        
+
+        marker_d023c9aca0f29467b4203f6a0fc00dc9.bindPopup(popup_0cc729ca416ca1455aa3432e3f0c9aa7)
+        ;
+
+        
+    
+    
+            marker_d023c9aca0f29467b4203f6a0fc00dc9.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Asiatic Wild Ass<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 05-05-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss and limited water sources drove the Asiatic wild ass to extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d4c47a5bad8cdbc716479e4462a7efd = L.marker(
+                [11.4183, 76.6952],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_6136829673438aaef219d928f98ceb8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3d4c47a5bad8cdbc716479e4462a7efd.setIcon(icon_6136829673438aaef219d928f98ceb8e);
+        
+    
+        var popup_078a75cf2cc39348cad6fa1fdf299581 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_09ac51dee539ba2966697970bcfba91c = $(`<div id="html_09ac51dee539ba2966697970bcfba91c" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Nilgiri Tahr<br>     <b>Cause of Extinction:</b> Poaching<br>     <b>Last Sighting Date:</b> 19-02-2017<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Nilgiri tahr, endemic to the Nilgiri Hills, was lost due to poaching and habitat destruction.     </div>`)[0];
+                popup_078a75cf2cc39348cad6fa1fdf299581.setContent(html_09ac51dee539ba2966697970bcfba91c);
+            
+        
+
+        marker_3d4c47a5bad8cdbc716479e4462a7efd.bindPopup(popup_078a75cf2cc39348cad6fa1fdf299581)
+        ;
+
+        
+    
+    
+            marker_3d4c47a5bad8cdbc716479e4462a7efd.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Nilgiri Tahr<br>
+    <b>Cause of Extinction:</b> Poaching<br>
+    <b>Last Sighting Date:</b> 19-02-2017<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Nilgiri tahr, endemic to the Nilgiri Hills, was lost due to poaching and habitat destruction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40726908a0dac1daf622ee518e3faa9f = L.marker(
+                [15.2993, 74.124],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_64883e1225cc0cbab6507b6c5fdfebab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_40726908a0dac1daf622ee518e3faa9f.setIcon(icon_64883e1225cc0cbab6507b6c5fdfebab);
+        
+    
+        var popup_13671534c8a2ffc5b9295ba8e9f4062e = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_beca8d0e843e28356849afb7c1acb587 = $(`<div id="html_beca8d0e843e28356849afb7c1acb587" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Peacock<br>     <b>Cause of Extinction:</b> Habitat Destruction<br>     <b>Last Sighting Date:</b> 12-11-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat destruction led to the tragic extinction of the Indian peacock.     </div>`)[0];
+                popup_13671534c8a2ffc5b9295ba8e9f4062e.setContent(html_beca8d0e843e28356849afb7c1acb587);
+            
+        
+
+        marker_40726908a0dac1daf622ee518e3faa9f.bindPopup(popup_13671534c8a2ffc5b9295ba8e9f4062e)
+        ;
+
+        
+    
+    
+            marker_40726908a0dac1daf622ee518e3faa9f.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Peacock<br>
+    <b>Cause of Extinction:</b> Habitat Destruction<br>
+    <b>Last Sighting Date:</b> 12-11-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat destruction led to the tragic extinction of the Indian peacock.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_492b559270ffba2d6b4058ab00d34e24 = L.marker(
+                [17.385, 78.4867],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_049e62dfc501e70aae7bd4f300c7fc5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_492b559270ffba2d6b4058ab00d34e24.setIcon(icon_049e62dfc501e70aae7bd4f300c7fc5e);
+        
+    
+        var popup_397adb11fd818e0b886d53312ccd47a9 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_934fd285a2ac3dfe2d5cd7fadaed710c = $(`<div id="html_934fd285a2ac3dfe2d5cd7fadaed710c" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Cobra<br>     <b>Cause of Extinction:</b> Overexploitation<br>     <b>Last Sighting Date:</b> 07-04-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian cobra faced overexploitation for its venom and skin.     </div>`)[0];
+                popup_397adb11fd818e0b886d53312ccd47a9.setContent(html_934fd285a2ac3dfe2d5cd7fadaed710c);
+            
+        
+
+        marker_492b559270ffba2d6b4058ab00d34e24.bindPopup(popup_397adb11fd818e0b886d53312ccd47a9)
+        ;
+
+        
+    
+    
+            marker_492b559270ffba2d6b4058ab00d34e24.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Cobra<br>
+    <b>Cause of Extinction:</b> Overexploitation<br>
+    <b>Last Sighting Date:</b> 07-04-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian cobra faced overexploitation for its venom and skin.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25ba0b43bca20a1ca65a773d81af823f = L.marker(
+                [32.2432, 77.1892],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_6ebdaea5d866f8fce472bd7b29db5885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_25ba0b43bca20a1ca65a773d81af823f.setIcon(icon_6ebdaea5d866f8fce472bd7b29db5885);
+        
+    
+        var popup_0cf2baf475b102e3484f61723566ccd6 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_0beb6606e1be5b2770b49f5a70ea49b4 = $(`<div id="html_0beb6606e1be5b2770b49f5a70ea49b4" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Himalayan Brown Bear<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 23-08-2022<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Himalayan brown bear was unable to survive habitat loss and human conflict.     </div>`)[0];
+                popup_0cf2baf475b102e3484f61723566ccd6.setContent(html_0beb6606e1be5b2770b49f5a70ea49b4);
+            
+        
+
+        marker_25ba0b43bca20a1ca65a773d81af823f.bindPopup(popup_0cf2baf475b102e3484f61723566ccd6)
+        ;
+
+        
+    
+    
+            marker_25ba0b43bca20a1ca65a773d81af823f.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Himalayan Brown Bear<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 23-08-2022<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Himalayan brown bear was unable to survive habitat loss and human conflict.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_798a7c3977e2655d96cf324892b7b041 = L.marker(
+                [27.0238, 74.2179],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_8b02e748d55e215028bd45f8d6337c26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_798a7c3977e2655d96cf324892b7b041.setIcon(icon_8b02e748d55e215028bd45f8d6337c26);
+        
+    
+        var popup_8568f128d158ea06c3d02506ac04c5dd = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_eaa9290b9e87e86c9c23d28101f5faf4 = $(`<div id="html_eaa9290b9e87e86c9c23d28101f5faf4" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Chinkara<br>     <b>Cause of Extinction:</b> Poaching<br>     <b>Last Sighting Date:</b> 19-01-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian chinkara succumbed to extensive poaching and habitat loss.     </div>`)[0];
+                popup_8568f128d158ea06c3d02506ac04c5dd.setContent(html_eaa9290b9e87e86c9c23d28101f5faf4);
+            
+        
+
+        marker_798a7c3977e2655d96cf324892b7b041.bindPopup(popup_8568f128d158ea06c3d02506ac04c5dd)
+        ;
+
+        
+    
+    
+            marker_798a7c3977e2655d96cf324892b7b041.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Chinkara<br>
+    <b>Cause of Extinction:</b> Poaching<br>
+    <b>Last Sighting Date:</b> 19-01-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian chinkara succumbed to extensive poaching and habitat loss.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8982d7262f024fadc99541b24a05d07e = L.marker(
+                [19.7515, 75.7139],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_06c33714298028fbcbf471989d0f5dd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8982d7262f024fadc99541b24a05d07e.setIcon(icon_06c33714298028fbcbf471989d0f5dd9);
+        
+    
+        var popup_906ff9e02da0463f274f97a56b846423 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_cd2ffcf761177f7aad5c6084e75c2c11 = $(`<div id="html_cd2ffcf761177f7aad5c6084e75c2c11" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Vulture<br>     <b>Cause of Extinction:</b> Pesticide Poisoning<br>     <b>Last Sighting Date:</b> 14-03-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Pesticide poisoning contributed significantly to the extinction of the Indian vulture.     </div>`)[0];
+                popup_906ff9e02da0463f274f97a56b846423.setContent(html_cd2ffcf761177f7aad5c6084e75c2c11);
+            
+        
+
+        marker_8982d7262f024fadc99541b24a05d07e.bindPopup(popup_906ff9e02da0463f274f97a56b846423)
+        ;
+
+        
+    
+    
+            marker_8982d7262f024fadc99541b24a05d07e.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Vulture<br>
+    <b>Cause of Extinction:</b> Pesticide Poisoning<br>
+    <b>Last Sighting Date:</b> 14-03-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Pesticide poisoning contributed significantly to the extinction of the Indian vulture.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b25ecd479e92e10cccd2d9e155a7a565 = L.marker(
+                [21.2787, 81.8661],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_4bea080c05db91332203759bbaf55b7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b25ecd479e92e10cccd2d9e155a7a565.setIcon(icon_4bea080c05db91332203759bbaf55b7d);
+        
+    
+        var popup_c73d8e216b5d34180c6e738b1e41a705 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_cdd68ae9a611dd15fdf66f4ab2229e9e = $(`<div id="html_cdd68ae9a611dd15fdf66f4ab2229e9e" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Python<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 08-09-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian python faced extinction due to habitat destruction and human encroachment.     </div>`)[0];
+                popup_c73d8e216b5d34180c6e738b1e41a705.setContent(html_cdd68ae9a611dd15fdf66f4ab2229e9e);
+            
+        
+
+        marker_b25ecd479e92e10cccd2d9e155a7a565.bindPopup(popup_c73d8e216b5d34180c6e738b1e41a705)
+        ;
+
+        
+    
+    
+            marker_b25ecd479e92e10cccd2d9e155a7a565.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Python<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 08-09-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian python faced extinction due to habitat destruction and human encroachment.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_daca97f9594a5664097ff61b5f03efe4 = L.marker(
+                [24.7668, 85.0054],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_5237f8f5a5bb4361c3c070f27425216c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_daca97f9594a5664097ff61b5f03efe4.setIcon(icon_5237f8f5a5bb4361c3c070f27425216c);
+        
+    
+        var popup_05d2a6f931e7ac580d20d290330463d5 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_13f9727e29a66a51069beadc16977e4c = $(`<div id="html_13f9727e29a66a51069beadc16977e4c" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Swamp Deer<br>     <b>Cause of Extinction:</b> Habitat Fragmentation<br>     <b>Last Sighting Date:</b> 11-10-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat fragmentation led to the extinction of the Indian swamp deer.     </div>`)[0];
+                popup_05d2a6f931e7ac580d20d290330463d5.setContent(html_13f9727e29a66a51069beadc16977e4c);
+            
+        
+
+        marker_daca97f9594a5664097ff61b5f03efe4.bindPopup(popup_05d2a6f931e7ac580d20d290330463d5)
+        ;
+
+        
+    
+    
+            marker_daca97f9594a5664097ff61b5f03efe4.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Swamp Deer<br>
+    <b>Cause of Extinction:</b> Habitat Fragmentation<br>
+    <b>Last Sighting Date:</b> 11-10-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat fragmentation led to the extinction of the Indian swamp deer.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a04b4452732eb277f4548f756334eadc = L.marker(
+                [8.5241, 76.9366],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_b550d42ed1aefaeaf59b8b6ed832b0c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a04b4452732eb277f4548f756334eadc.setIcon(icon_b550d42ed1aefaeaf59b8b6ed832b0c3);
+        
+    
+        var popup_2cb80f7b5131ca18859c67272038ef61 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_d12204b7d62d8baa12c069d3b7df2e6a = $(`<div id="html_d12204b7d62d8baa12c069d3b7df2e6a" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Dugong<br>     <b>Cause of Extinction:</b> Overfishing<br>     <b>Last Sighting Date:</b> 03-12-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Overfishing and habitat destruction contributed to the extinction of the Dugong.     </div>`)[0];
+                popup_2cb80f7b5131ca18859c67272038ef61.setContent(html_d12204b7d62d8baa12c069d3b7df2e6a);
+            
+        
+
+        marker_a04b4452732eb277f4548f756334eadc.bindPopup(popup_2cb80f7b5131ca18859c67272038ef61)
+        ;
+
+        
+    
+    
+            marker_a04b4452732eb277f4548f756334eadc.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Dugong<br>
+    <b>Cause of Extinction:</b> Overfishing<br>
+    <b>Last Sighting Date:</b> 03-12-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Overfishing and habitat destruction contributed to the extinction of the Dugong.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66c3e6890170004fdf08d259134a1ae9 = L.marker(
+                [21.1397, 79.0882],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_ea8953bfe7ad347462e3d27e9b133c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_66c3e6890170004fdf08d259134a1ae9.setIcon(icon_ea8953bfe7ad347462e3d27e9b133c07);
+        
+    
+        var popup_e50d10b004be9525c00dd7c89e9aee36 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_453ef1fd6ca9db20ea11fd6c41a950b2 = $(`<div id="html_453ef1fd6ca9db20ea11fd6c41a950b2" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Monitor Lizard<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 27-06-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian monitor lizard faced extinction due to habitat destruction and hunting.     </div>`)[0];
+                popup_e50d10b004be9525c00dd7c89e9aee36.setContent(html_453ef1fd6ca9db20ea11fd6c41a950b2);
+            
+        
+
+        marker_66c3e6890170004fdf08d259134a1ae9.bindPopup(popup_e50d10b004be9525c00dd7c89e9aee36)
+        ;
+
+        
+    
+    
+            marker_66c3e6890170004fdf08d259134a1ae9.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Monitor Lizard<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 27-06-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian monitor lizard faced extinction due to habitat destruction and hunting.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fc4ca2d681511a5321007d3a15134e5 = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_2e3757e15a25f0573e026b27dcc0adad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6fc4ca2d681511a5321007d3a15134e5.setIcon(icon_2e3757e15a25f0573e026b27dcc0adad);
+        
+    
+        var popup_50bee435cefa361a5fab69a8c0c2f29d = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_f3401d5e37dd0d28a788bd3562872907 = $(`<div id="html_f3401d5e37dd0d28a788bd3562872907" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Pangolin<br>     <b>Cause of Extinction:</b> Wildlife Trade<br>     <b>Last Sighting Date:</b> 04-11-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian pangolin was overexploited for its scales and meat, leading to its extinction.     </div>`)[0];
+                popup_50bee435cefa361a5fab69a8c0c2f29d.setContent(html_f3401d5e37dd0d28a788bd3562872907);
+            
+        
+
+        marker_6fc4ca2d681511a5321007d3a15134e5.bindPopup(popup_50bee435cefa361a5fab69a8c0c2f29d)
+        ;
+
+        
+    
+    
+            marker_6fc4ca2d681511a5321007d3a15134e5.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Pangolin<br>
+    <b>Cause of Extinction:</b> Wildlife Trade<br>
+    <b>Last Sighting Date:</b> 04-11-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian pangolin was overexploited for its scales and meat, leading to its extinction.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_589c40344434594a87b3ebcddf667e80 = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_8ead2b751a9301cfbd756a8c12a0b4a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_589c40344434594a87b3ebcddf667e80.setIcon(icon_8ead2b751a9301cfbd756a8c12a0b4a6);
+        
+    
+        var popup_b185eb5b6f009b4fc27b37eae3fa14d9 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_81759ce4408e70552c4fe36f91efdadb = $(`<div id="html_81759ce4408e70552c4fe36f91efdadb" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Pond Terrapin<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 16-01-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss and pollution caused the extinction of the Indian pond terrapin.     </div>`)[0];
+                popup_b185eb5b6f009b4fc27b37eae3fa14d9.setContent(html_81759ce4408e70552c4fe36f91efdadb);
+            
+        
+
+        marker_589c40344434594a87b3ebcddf667e80.bindPopup(popup_b185eb5b6f009b4fc27b37eae3fa14d9)
+        ;
+
+        
+    
+    
+            marker_589c40344434594a87b3ebcddf667e80.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Pond Terrapin<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 16-01-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss and pollution caused the extinction of the Indian pond terrapin.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6741a4c1ac51d3dd03c2216afc2b061 = L.marker(
+                [23.8103, 79.4562],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_61d435cec55f405ec70b74bea23dedb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a6741a4c1ac51d3dd03c2216afc2b061.setIcon(icon_61d435cec55f405ec70b74bea23dedb2);
+        
+    
+        var popup_71fd97ee4cb06de1a581976ae001989d = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b99cf557e49b5e09ee258a38477c214f = $(`<div id="html_b99cf557e49b5e09ee258a38477c214f" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Forest Owlet<br>     <b>Cause of Extinction:</b> Deforestation<br>     <b>Last Sighting Date:</b> 28-07-2017<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Deforestation and loss of habitat led to the extinction of the forest owlet.     </div>`)[0];
+                popup_71fd97ee4cb06de1a581976ae001989d.setContent(html_b99cf557e49b5e09ee258a38477c214f);
+            
+        
+
+        marker_a6741a4c1ac51d3dd03c2216afc2b061.bindPopup(popup_71fd97ee4cb06de1a581976ae001989d)
+        ;
+
+        
+    
+    
+            marker_a6741a4c1ac51d3dd03c2216afc2b061.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Forest Owlet<br>
+    <b>Cause of Extinction:</b> Deforestation<br>
+    <b>Last Sighting Date:</b> 28-07-2017<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Deforestation and loss of habitat led to the extinction of the forest owlet.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91a15cf441c4d6e661370fbc718895d0 = L.marker(
+                [23.4733, 77.9477],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_c9e3872e4cff423a220dc3bdc2690dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_91a15cf441c4d6e661370fbc718895d0.setIcon(icon_c9e3872e4cff423a220dc3bdc2690dc3);
+        
+    
+        var popup_2b369c8efbefdd418998f0fe2dd6f425 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_f41b966b7fe39ed0c1fc7a7077ae4fdf = $(`<div id="html_f41b966b7fe39ed0c1fc7a7077ae4fdf" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Asiatic Cheetah<br>     <b>Cause of Extinction:</b> Overhunting<br>     <b>Last Sighting Date:</b> 01-09-2015<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Overhunting and habitat destruction caused the extinction of the Asiatic cheetah in India.     </div>`)[0];
+                popup_2b369c8efbefdd418998f0fe2dd6f425.setContent(html_f41b966b7fe39ed0c1fc7a7077ae4fdf);
+            
+        
+
+        marker_91a15cf441c4d6e661370fbc718895d0.bindPopup(popup_2b369c8efbefdd418998f0fe2dd6f425)
+        ;
+
+        
+    
+    
+            marker_91a15cf441c4d6e661370fbc718895d0.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Asiatic Cheetah<br>
+    <b>Cause of Extinction:</b> Overhunting<br>
+    <b>Last Sighting Date:</b> 01-09-2015<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Overhunting and habitat destruction caused the extinction of the Asiatic cheetah in India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af5034fe55213cbb029ab94f596081df = L.marker(
+                [27.1287, 71.0466],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_bf5f2460ffeb512dfc86055409d67208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_af5034fe55213cbb029ab94f596081df.setIcon(icon_bf5f2460ffeb512dfc86055409d67208);
+        
+    
+        var popup_3ff78c855a9d78fe47640933d260cabf = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_85e049549add9830caad116c050cc2bd = $(`<div id="html_85e049549add9830caad116c050cc2bd" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Great Indian Bustard<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 11-02-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Great Indian Bustard was lost due to habitat destruction and human encroachment.     </div>`)[0];
+                popup_3ff78c855a9d78fe47640933d260cabf.setContent(html_85e049549add9830caad116c050cc2bd);
+            
+        
+
+        marker_af5034fe55213cbb029ab94f596081df.bindPopup(popup_3ff78c855a9d78fe47640933d260cabf)
+        ;
+
+        
+    
+    
+            marker_af5034fe55213cbb029ab94f596081df.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Great Indian Bustard<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 11-02-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Great Indian Bustard was lost due to habitat destruction and human encroachment.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_521c7de7711800c8d0c1875cf7421c49 = L.marker(
+                [29.3786, 78.1358],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_9c56143121eb2cf68679e3e5132cfcc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_521c7de7711800c8d0c1875cf7421c49.setIcon(icon_9c56143121eb2cf68679e3e5132cfcc0);
+        
+    
+        var popup_0c1e3fa61dcff430382f9f7a6267d4b1 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_68ac6ba2f038266ce5f9cfc2fe5a0280 = $(`<div id="html_68ac6ba2f038266ce5f9cfc2fe5a0280" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Narrow-headed Softshell Turtle<br>     <b>Cause of Extinction:</b> Pollution<br>     <b>Last Sighting Date:</b> 05-04-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> River pollution and overharvesting caused the extinction of this turtle species.     </div>`)[0];
+                popup_0c1e3fa61dcff430382f9f7a6267d4b1.setContent(html_68ac6ba2f038266ce5f9cfc2fe5a0280);
+            
+        
+
+        marker_521c7de7711800c8d0c1875cf7421c49.bindPopup(popup_0c1e3fa61dcff430382f9f7a6267d4b1)
+        ;
+
+        
+    
+    
+            marker_521c7de7711800c8d0c1875cf7421c49.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Narrow-headed Softshell Turtle<br>
+    <b>Cause of Extinction:</b> Pollution<br>
+    <b>Last Sighting Date:</b> 05-04-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> River pollution and overharvesting caused the extinction of this turtle species.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fbb3dc61fd67b8434823cdc9ed6740f = L.marker(
+                [15.9129, 79.74],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_b3783b1324e82555c26f5622dd097559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8fbb3dc61fd67b8434823cdc9ed6740f.setIcon(icon_b3783b1324e82555c26f5622dd097559);
+        
+    
+        var popup_a525f871d0965801e95e09e38497eb41 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_76c587f97e4367adc1e842686a0aea4f = $(`<div id="html_76c587f97e4367adc1e842686a0aea4f" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Wolf<br>     <b>Cause of Extinction:</b> Human Conflict<br>     <b>Last Sighting Date:</b> 14-12-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Human-wildlife conflict and habitat fragmentation contributed to the extinction of the Indian wolf.     </div>`)[0];
+                popup_a525f871d0965801e95e09e38497eb41.setContent(html_76c587f97e4367adc1e842686a0aea4f);
+            
+        
+
+        marker_8fbb3dc61fd67b8434823cdc9ed6740f.bindPopup(popup_a525f871d0965801e95e09e38497eb41)
+        ;
+
+        
+    
+    
+            marker_8fbb3dc61fd67b8434823cdc9ed6740f.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Wolf<br>
+    <b>Cause of Extinction:</b> Human Conflict<br>
+    <b>Last Sighting Date:</b> 14-12-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Human-wildlife conflict and habitat fragmentation contributed to the extinction of the Indian wolf.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0922a28ffdbdf99abf1d2bfff0ec743 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_b8bcf45a221149b938b07e48b8d5bc1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a0922a28ffdbdf99abf1d2bfff0ec743.setIcon(icon_b8bcf45a221149b938b07e48b8d5bc1b);
+        
+    
+        var popup_11fe3ca5b88488b46136c8b121a8c1b9 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_3129c8815aefcb539991d9cc81e59f08 = $(`<div id="html_3129c8815aefcb539991d9cc81e59f08" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Pitta<br>     <b>Cause of Extinction:</b> Deforestation<br>     <b>Last Sighting Date:</b> 18-06-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Deforestation and habitat destruction led to the extinction of the Indian pitta.     </div>`)[0];
+                popup_11fe3ca5b88488b46136c8b121a8c1b9.setContent(html_3129c8815aefcb539991d9cc81e59f08);
+            
+        
+
+        marker_a0922a28ffdbdf99abf1d2bfff0ec743.bindPopup(popup_11fe3ca5b88488b46136c8b121a8c1b9)
+        ;
+
+        
+    
+    
+            marker_a0922a28ffdbdf99abf1d2bfff0ec743.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Pitta<br>
+    <b>Cause of Extinction:</b> Deforestation<br>
+    <b>Last Sighting Date:</b> 18-06-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Deforestation and habitat destruction led to the extinction of the Indian pitta.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68447a4c91eeaaea0d320679175ab3b6 = L.marker(
+                [7.2436, 93.8656],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_d5dd31a6ac3854255efc0ab491a66ade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68447a4c91eeaaea0d320679175ab3b6.setIcon(icon_d5dd31a6ac3854255efc0ab491a66ade);
+        
+    
+        var popup_1610c9a5375b8683fc67a8db6661ecf8 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_77db4d055de9e2d6f64d83bd8386455b = $(`<div id="html_77db4d055de9e2d6f64d83bd8386455b" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Nicobar Pigeon<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 22-03-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Nicobar pigeon disappeared due to habitat loss and hunting.     </div>`)[0];
+                popup_1610c9a5375b8683fc67a8db6661ecf8.setContent(html_77db4d055de9e2d6f64d83bd8386455b);
+            
+        
+
+        marker_68447a4c91eeaaea0d320679175ab3b6.bindPopup(popup_1610c9a5375b8683fc67a8db6661ecf8)
+        ;
+
+        
+    
+    
+            marker_68447a4c91eeaaea0d320679175ab3b6.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Nicobar Pigeon<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 22-03-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Nicobar pigeon disappeared due to habitat loss and hunting.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf308faf4013e4d9d7c628e290f37b3 = L.marker(
+                [26.1445, 91.7362],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_2f7dead26cc367004ccfa670f171611b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bbf308faf4013e4d9d7c628e290f37b3.setIcon(icon_2f7dead26cc367004ccfa670f171611b);
+        
+    
+        var popup_bac3f8f7a6bb45d0a8531159a9e98526 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_aa5df144d51f1f4275f07fb94fd318a5 = $(`<div id="html_aa5df144d51f1f4275f07fb94fd318a5" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Bengal Florican<br>     <b>Cause of Extinction:</b> Agriculture Expansion<br>     <b>Last Sighting Date:</b> 08-09-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Agriculture expansion into grasslands caused the extinction of the Bengal Florican.     </div>`)[0];
+                popup_bac3f8f7a6bb45d0a8531159a9e98526.setContent(html_aa5df144d51f1f4275f07fb94fd318a5);
+            
+        
+
+        marker_bbf308faf4013e4d9d7c628e290f37b3.bindPopup(popup_bac3f8f7a6bb45d0a8531159a9e98526)
+        ;
+
+        
+    
+    
+            marker_bbf308faf4013e4d9d7c628e290f37b3.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Bengal Florican<br>
+    <b>Cause of Extinction:</b> Agriculture Expansion<br>
+    <b>Last Sighting Date:</b> 08-09-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Agriculture expansion into grasslands caused the extinction of the Bengal Florican.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0def164d86dd1758eeb8196a2e1b9af = L.marker(
+                [25.3176, 82.9739],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_173c41f9c7c17eb5284124f176bfee69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a0def164d86dd1758eeb8196a2e1b9af.setIcon(icon_173c41f9c7c17eb5284124f176bfee69);
+        
+    
+        var popup_b4099584b8fe085992f358dba056f733 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_1126cd9977afb8754cc9afd9452b1846 = $(`<div id="html_1126cd9977afb8754cc9afd9452b1846" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Softshell Turtle<br>     <b>Cause of Extinction:</b> Overexploitation<br>     <b>Last Sighting Date:</b> 03-05-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Overharvesting for consumption and habitat destruction led to the extinction of the Indian softshell turtle.     </div>`)[0];
+                popup_b4099584b8fe085992f358dba056f733.setContent(html_1126cd9977afb8754cc9afd9452b1846);
+            
+        
+
+        marker_a0def164d86dd1758eeb8196a2e1b9af.bindPopup(popup_b4099584b8fe085992f358dba056f733)
+        ;
+
+        
+    
+    
+            marker_a0def164d86dd1758eeb8196a2e1b9af.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Softshell Turtle<br>
+    <b>Cause of Extinction:</b> Overexploitation<br>
+    <b>Last Sighting Date:</b> 03-05-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Overharvesting for consumption and habitat destruction led to the extinction of the Indian softshell turtle.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7930bfb5aca72646fce553cd02ebdfeb = L.marker(
+                [22.5726, 88.3639],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_a119b771dbc98617e8bc5f118eedb923 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7930bfb5aca72646fce553cd02ebdfeb.setIcon(icon_a119b771dbc98617e8bc5f118eedb923);
+        
+    
+        var popup_acd20b40cae68bb4e4bc5f8e1da9beb7 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_05b680a2b40b7818c2917455d06ca6fd = $(`<div id="html_05b680a2b40b7818c2917455d06ca6fd" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Wild Dog (Dhole)<br>     <b>Cause of Extinction:</b> Habitat Fragmentation<br>     <b>Last Sighting Date:</b> 15-11-2017<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat fragmentation and loss of prey caused the extinction of the dhole in some regions.     </div>`)[0];
+                popup_acd20b40cae68bb4e4bc5f8e1da9beb7.setContent(html_05b680a2b40b7818c2917455d06ca6fd);
+            
+        
+
+        marker_7930bfb5aca72646fce553cd02ebdfeb.bindPopup(popup_acd20b40cae68bb4e4bc5f8e1da9beb7)
+        ;
+
+        
+    
+    
+            marker_7930bfb5aca72646fce553cd02ebdfeb.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Wild Dog (Dhole)<br>
+    <b>Cause of Extinction:</b> Habitat Fragmentation<br>
+    <b>Last Sighting Date:</b> 15-11-2017<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat fragmentation and loss of prey caused the extinction of the dhole in some regions.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5f9d08bc8e84f721ee2e8dea6dedcf5 = L.marker(
+                [9.158, 92.5866],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_bfe7c0dca37b7aa7e15ebb610f7389c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f5f9d08bc8e84f721ee2e8dea6dedcf5.setIcon(icon_bfe7c0dca37b7aa7e15ebb610f7389c6);
+        
+    
+        var popup_eb51539606be583936c2fb819ef6f737 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_127b1b3e0bb09df4888dc376ae32b676 = $(`<div id="html_127b1b3e0bb09df4888dc376ae32b676" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Nicobar Sparrowhawk<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 20-01-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Nicobar sparrowhawk succumbed to habitat destruction in the Nicobar Islands.     </div>`)[0];
+                popup_eb51539606be583936c2fb819ef6f737.setContent(html_127b1b3e0bb09df4888dc376ae32b676);
+            
+        
+
+        marker_f5f9d08bc8e84f721ee2e8dea6dedcf5.bindPopup(popup_eb51539606be583936c2fb819ef6f737)
+        ;
+
+        
+    
+    
+            marker_f5f9d08bc8e84f721ee2e8dea6dedcf5.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Nicobar Sparrowhawk<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 20-01-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Nicobar sparrowhawk succumbed to habitat destruction in the Nicobar Islands.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca743eb7df9ebd1adcede03b91211967 = L.marker(
+                [26.4499, 74.6399],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_da73179a3659fa6a6b5a23126b70c0e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ca743eb7df9ebd1adcede03b91211967.setIcon(icon_da73179a3659fa6a6b5a23126b70c0e4);
+        
+    
+        var popup_2c76308645da2fd82e32488e2365c6f0 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_76521f3f8552d4b863f28e7b86205247 = $(`<div id="html_76521f3f8552d4b863f28e7b86205247" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Desert Fox<br>     <b>Cause of Extinction:</b> Overhunting<br>     <b>Last Sighting Date:</b> 09-03-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Indian desert fox disappeared due to overhunting and habitat degradation.     </div>`)[0];
+                popup_2c76308645da2fd82e32488e2365c6f0.setContent(html_76521f3f8552d4b863f28e7b86205247);
+            
+        
+
+        marker_ca743eb7df9ebd1adcede03b91211967.bindPopup(popup_2c76308645da2fd82e32488e2365c6f0)
+        ;
+
+        
+    
+    
+            marker_ca743eb7df9ebd1adcede03b91211967.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Desert Fox<br>
+    <b>Cause of Extinction:</b> Overhunting<br>
+    <b>Last Sighting Date:</b> 09-03-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Indian desert fox disappeared due to overhunting and habitat degradation.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c557281b65dab2a37418446cf735e9b = L.marker(
+                [34.0837, 74.7973],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_0d4d94dd860381d2bca8e7336ac3c206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1c557281b65dab2a37418446cf735e9b.setIcon(icon_0d4d94dd860381d2bca8e7336ac3c206);
+        
+    
+        var popup_c25ed03345c5a5ccf5de8b0f911e8e9a = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_847bc7f14530964aa33f41bc071948f6 = $(`<div id="html_847bc7f14530964aa33f41bc071948f6" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Kashmir Stag (Hangul)<br>     <b>Cause of Extinction:</b> Poaching<br>     <b>Last Sighting Date:</b> 12-07-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Poaching and habitat encroachment led to the extinction of the Kashmir stag.     </div>`)[0];
+                popup_c25ed03345c5a5ccf5de8b0f911e8e9a.setContent(html_847bc7f14530964aa33f41bc071948f6);
+            
+        
+
+        marker_1c557281b65dab2a37418446cf735e9b.bindPopup(popup_c25ed03345c5a5ccf5de8b0f911e8e9a)
+        ;
+
+        
+    
+    
+            marker_1c557281b65dab2a37418446cf735e9b.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Kashmir Stag (Hangul)<br>
+    <b>Cause of Extinction:</b> Poaching<br>
+    <b>Last Sighting Date:</b> 12-07-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Poaching and habitat encroachment led to the extinction of the Kashmir stag.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f562a2e405d6fc661e52a2a3d91fe10 = L.marker(
+                [27.0238, 93.9229],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_7ec116ec7398b284d4bee130cc9c9a64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3f562a2e405d6fc661e52a2a3d91fe10.setIcon(icon_7ec116ec7398b284d4bee130cc9c9a64);
+        
+    
+        var popup_261e9969e73acac866fddef976d975b6 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_e481b653febcd82722d553c2d44bd11c = $(`<div id="html_e481b653febcd82722d553c2d44bd11c" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Western Hoolock Gibbon<br>     <b>Cause of Extinction:</b> Deforestation<br>     <b>Last Sighting Date:</b> 23-06-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Deforestation and loss of canopy cover resulted in the extinction of the Western hoolock gibbon.     </div>`)[0];
+                popup_261e9969e73acac866fddef976d975b6.setContent(html_e481b653febcd82722d553c2d44bd11c);
+            
+        
+
+        marker_3f562a2e405d6fc661e52a2a3d91fe10.bindPopup(popup_261e9969e73acac866fddef976d975b6)
+        ;
+
+        
+    
+    
+            marker_3f562a2e405d6fc661e52a2a3d91fe10.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Western Hoolock Gibbon<br>
+    <b>Cause of Extinction:</b> Deforestation<br>
+    <b>Last Sighting Date:</b> 23-06-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Deforestation and loss of canopy cover resulted in the extinction of the Western hoolock gibbon.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3aabba6741d51475b889d98c3294dd4 = L.marker(
+                [11.2588, 75.7804],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_87d939f279f20e5575347d43cb7f3be8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e3aabba6741d51475b889d98c3294dd4.setIcon(icon_87d939f279f20e5575347d43cb7f3be8);
+        
+    
+        var popup_6b867c74cdb5fc189a94e1fae53bb95f = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_49b862e205ad928992069532603da382 = $(`<div id="html_49b862e205ad928992069532603da382" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Malabar Civet<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 15-08-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Malabar civet was lost to habitat destruction and hunting.     </div>`)[0];
+                popup_6b867c74cdb5fc189a94e1fae53bb95f.setContent(html_49b862e205ad928992069532603da382);
+            
+        
+
+        marker_e3aabba6741d51475b889d98c3294dd4.bindPopup(popup_6b867c74cdb5fc189a94e1fae53bb95f)
+        ;
+
+        
+    
+    
+            marker_e3aabba6741d51475b889d98c3294dd4.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Malabar Civet<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 15-08-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Malabar civet was lost to habitat destruction and hunting.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_106a4a65c81aa9eae3ee828e80ae0e1c = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_746d249b0be0c2d95e8c2ab75c9a215f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_106a4a65c81aa9eae3ee828e80ae0e1c.setIcon(icon_746d249b0be0c2d95e8c2ab75c9a215f);
+        
+    
+        var popup_dddaa2c1c41b5347778292810c9844bb = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_058ca8cf9e1e9338c3ed740b9920dd88 = $(`<div id="html_058ca8cf9e1e9338c3ed740b9920dd88" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Giant Squirrel<br>     <b>Cause of Extinction:</b> Deforestation<br>     <b>Last Sighting Date:</b> 04-04-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Deforestation caused the decline and extinction of the Indian giant squirrel.     </div>`)[0];
+                popup_dddaa2c1c41b5347778292810c9844bb.setContent(html_058ca8cf9e1e9338c3ed740b9920dd88);
+            
+        
+
+        marker_106a4a65c81aa9eae3ee828e80ae0e1c.bindPopup(popup_dddaa2c1c41b5347778292810c9844bb)
+        ;
+
+        
+    
+    
+            marker_106a4a65c81aa9eae3ee828e80ae0e1c.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Giant Squirrel<br>
+    <b>Cause of Extinction:</b> Deforestation<br>
+    <b>Last Sighting Date:</b> 04-04-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Deforestation caused the decline and extinction of the Indian giant squirrel.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b60efc35562d8943685f2c63547e9925 = L.marker(
+                [26.9124, 75.7873],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_f1d69c6ba2772cfe345ad0c75cc18f12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b60efc35562d8943685f2c63547e9925.setIcon(icon_f1d69c6ba2772cfe345ad0c75cc18f12);
+        
+    
+        var popup_013cd12539ab54533027001a31a6a169 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_dfe8eee5fe5553bb3b0f0e1e4280c9be = $(`<div id="html_dfe8eee5fe5553bb3b0f0e1e4280c9be" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Hog Deer<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 30-06-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss and human encroachment led to the extinction of the Indian hog deer.     </div>`)[0];
+                popup_013cd12539ab54533027001a31a6a169.setContent(html_dfe8eee5fe5553bb3b0f0e1e4280c9be);
+            
+        
+
+        marker_b60efc35562d8943685f2c63547e9925.bindPopup(popup_013cd12539ab54533027001a31a6a169)
+        ;
+
+        
+    
+    
+            marker_b60efc35562d8943685f2c63547e9925.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Hog Deer<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 30-06-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss and human encroachment led to the extinction of the Indian hog deer.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3473bcdbb29f56291763d3eddbf488cc = L.marker(
+                [22.9868, 87.855],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_8b8005e56c5ebcd306b2e0c83d39a325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3473bcdbb29f56291763d3eddbf488cc.setIcon(icon_8b8005e56c5ebcd306b2e0c83d39a325);
+        
+    
+        var popup_d93c52388aa20a5917401a42cbc1d3e3 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_bdb3f654596be56f9dfb40c797188483 = $(`<div id="html_bdb3f654596be56f9dfb40c797188483" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Tiger (Certain Subspecies)<br>     <b>Cause of Extinction:</b> Overhunting<br>     <b>Last Sighting Date:</b> 12-12-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Certain subspecies of the Indian tiger disappeared due to overhunting and loss of habitat.     </div>`)[0];
+                popup_d93c52388aa20a5917401a42cbc1d3e3.setContent(html_bdb3f654596be56f9dfb40c797188483);
+            
+        
+
+        marker_3473bcdbb29f56291763d3eddbf488cc.bindPopup(popup_d93c52388aa20a5917401a42cbc1d3e3)
+        ;
+
+        
+    
+    
+            marker_3473bcdbb29f56291763d3eddbf488cc.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Tiger (Certain Subspecies)<br>
+    <b>Cause of Extinction:</b> Overhunting<br>
+    <b>Last Sighting Date:</b> 12-12-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Certain subspecies of the Indian tiger disappeared due to overhunting and loss of habitat.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5c289267cb7ff32d12beebf3c6a24fa = L.marker(
+                [32.1017, 77.459],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_514b3b06e9c5428094ec302427619642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5c289267cb7ff32d12beebf3c6a24fa.setIcon(icon_514b3b06e9c5428094ec302427619642);
+        
+    
+        var popup_d9be0b0697f94078a1eb3a74d31265c1 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_6b201d46c814bb47fad96d27c0e9f985 = $(`<div id="html_6b201d46c814bb47fad96d27c0e9f985" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Himalayan Ibex<br>     <b>Cause of Extinction:</b> Hunting<br>     <b>Last Sighting Date:</b> 18-05-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Overhunting and habitat loss led to the extinction of the Himalayan Ibex in India.     </div>`)[0];
+                popup_d9be0b0697f94078a1eb3a74d31265c1.setContent(html_6b201d46c814bb47fad96d27c0e9f985);
+            
+        
+
+        marker_a5c289267cb7ff32d12beebf3c6a24fa.bindPopup(popup_d9be0b0697f94078a1eb3a74d31265c1)
+        ;
+
+        
+    
+    
+            marker_a5c289267cb7ff32d12beebf3c6a24fa.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Himalayan Ibex<br>
+    <b>Cause of Extinction:</b> Hunting<br>
+    <b>Last Sighting Date:</b> 18-05-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Overhunting and habitat loss led to the extinction of the Himalayan Ibex in India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dbca2a4058d93f6ca22ca1d040188d2 = L.marker(
+                [28.6448, 77.2167],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_bfc0f2d9b30b7897950ace90d37e4fb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8dbca2a4058d93f6ca22ca1d040188d2.setIcon(icon_bfc0f2d9b30b7897950ace90d37e4fb4);
+        
+    
+        var popup_fedccb1b994dfb462edbafce44c73a2d = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_bf76bc70c9366f650686961eb9c441f6 = $(`<div id="html_bf76bc70c9366f650686961eb9c441f6" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> White-rumped Vulture<br>     <b>Cause of Extinction:</b> Poisoning<br>     <b>Last Sighting Date:</b> 22-09-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The white-rumped vulture became extinct due to poisoning from eating carcasses treated with diclofenac.     </div>`)[0];
+                popup_fedccb1b994dfb462edbafce44c73a2d.setContent(html_bf76bc70c9366f650686961eb9c441f6);
+            
+        
+
+        marker_8dbca2a4058d93f6ca22ca1d040188d2.bindPopup(popup_fedccb1b994dfb462edbafce44c73a2d)
+        ;
+
+        
+    
+    
+            marker_8dbca2a4058d93f6ca22ca1d040188d2.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> White-rumped Vulture<br>
+    <b>Cause of Extinction:</b> Poisoning<br>
+    <b>Last Sighting Date:</b> 22-09-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The white-rumped vulture became extinct due to poisoning from eating carcasses treated with diclofenac.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_348a33165cf0366ff62286f1886aa3f5 = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_45a9f2551aa4294fc6614dfce39a0a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_348a33165cf0366ff62286f1886aa3f5.setIcon(icon_45a9f2551aa4294fc6614dfce39a0a62);
+        
+    
+        var popup_81f47a55bdd0b8c1fe0cfefaaab8c8ee = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b4dede87ec3fc6810f480e20c7cebf7f = $(`<div id="html_b4dede87ec3fc6810f480e20c7cebf7f" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Javan Tiger<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 10-11-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat destruction and poaching led to the extinction of the Javan tiger in India.     </div>`)[0];
+                popup_81f47a55bdd0b8c1fe0cfefaaab8c8ee.setContent(html_b4dede87ec3fc6810f480e20c7cebf7f);
+            
+        
+
+        marker_348a33165cf0366ff62286f1886aa3f5.bindPopup(popup_81f47a55bdd0b8c1fe0cfefaaab8c8ee)
+        ;
+
+        
+    
+    
+            marker_348a33165cf0366ff62286f1886aa3f5.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Javan Tiger<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 10-11-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat destruction and poaching led to the extinction of the Javan tiger in India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b722d6e67ccd4a32c70e2b564497c7e7 = L.marker(
+                [32.011, 78.4537],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_051eadb4a557164f8c069d172b8de75e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b722d6e67ccd4a32c70e2b564497c7e7.setIcon(icon_051eadb4a557164f8c069d172b8de75e);
+        
+    
+        var popup_a377279610b19ad3fe0a34c6cae044ee = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_b9027b8e43b3b174825862d5ab8bbeea = $(`<div id="html_b9027b8e43b3b174825862d5ab8bbeea" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Himalayan Brown Bear<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 01-08-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> The Himalayan brown bear was pushed to extinction due to loss of habitat and human-wildlife conflict.     </div>`)[0];
+                popup_a377279610b19ad3fe0a34c6cae044ee.setContent(html_b9027b8e43b3b174825862d5ab8bbeea);
+            
+        
+
+        marker_b722d6e67ccd4a32c70e2b564497c7e7.bindPopup(popup_a377279610b19ad3fe0a34c6cae044ee)
+        ;
+
+        
+    
+    
+            marker_b722d6e67ccd4a32c70e2b564497c7e7.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Himalayan Brown Bear<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 01-08-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> The Himalayan brown bear was pushed to extinction due to loss of habitat and human-wildlife conflict.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9999510790e5edee1ab08f9f13cd8aab = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_96d2210ff28e4b0d95be5db5b6cb9709 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9999510790e5edee1ab08f9f13cd8aab.setIcon(icon_96d2210ff28e4b0d95be5db5b6cb9709);
+        
+    
+        var popup_85e48f6d085979ead0ea26f7e17150a0 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_6896af1a9401748d0dfaaff97409972e = $(`<div id="html_6896af1a9401748d0dfaaff97409972e" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Spotted Cheetah<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 02-05-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss and lack of prey led to the extinction of the spotted cheetah in India.     </div>`)[0];
+                popup_85e48f6d085979ead0ea26f7e17150a0.setContent(html_6896af1a9401748d0dfaaff97409972e);
+            
+        
+
+        marker_9999510790e5edee1ab08f9f13cd8aab.bindPopup(popup_85e48f6d085979ead0ea26f7e17150a0)
+        ;
+
+        
+    
+    
+            marker_9999510790e5edee1ab08f9f13cd8aab.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Spotted Cheetah<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 02-05-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss and lack of prey led to the extinction of the spotted cheetah in India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de8ddf2472216e220bc76b19e7cb19c6 = L.marker(
+                [13.0827, 80.2707],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_5e5507d8f54dd9e1c9a27bd9b0d63a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_de8ddf2472216e220bc76b19e7cb19c6.setIcon(icon_5e5507d8f54dd9e1c9a27bd9b0d63a9b);
+        
+    
+        var popup_cf2df37cf2ce6e9fa957e8806c577c24 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_364229b009a8f8d3f5d43c24c13f5d46 = $(`<div id="html_364229b009a8f8d3f5d43c24c13f5d46" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Malayan Tiger<br>     <b>Cause of Extinction:</b> Hunting<br>     <b>Last Sighting Date:</b> 07-11-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Overhunting and habitat destruction led to the extinction of the Malayan tiger in parts of India.     </div>`)[0];
+                popup_cf2df37cf2ce6e9fa957e8806c577c24.setContent(html_364229b009a8f8d3f5d43c24c13f5d46);
+            
+        
+
+        marker_de8ddf2472216e220bc76b19e7cb19c6.bindPopup(popup_cf2df37cf2ce6e9fa957e8806c577c24)
+        ;
+
+        
+    
+    
+            marker_de8ddf2472216e220bc76b19e7cb19c6.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Malayan Tiger<br>
+    <b>Cause of Extinction:</b> Hunting<br>
+    <b>Last Sighting Date:</b> 07-11-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Overhunting and habitat destruction led to the extinction of the Malayan tiger in parts of India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9e50921df4ae492feab765015319c97 = L.marker(
+                [13.8269, 77.5271],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_ddbfd6edb85a16a5d154a19eb941faac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e9e50921df4ae492feab765015319c97.setIcon(icon_ddbfd6edb85a16a5d154a19eb941faac);
+        
+    
+        var popup_a1cc6049c830870f2bf26217473d119f = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_062e746a1bbe398de94ed57dc5b60658 = $(`<div id="html_062e746a1bbe398de94ed57dc5b60658" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Yellow-eyed Penguin<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 18-04-2021<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss due to human settlements and fishing led to the extinction of the yellow-eyed penguin in India.     </div>`)[0];
+                popup_a1cc6049c830870f2bf26217473d119f.setContent(html_062e746a1bbe398de94ed57dc5b60658);
+            
+        
+
+        marker_e9e50921df4ae492feab765015319c97.bindPopup(popup_a1cc6049c830870f2bf26217473d119f)
+        ;
+
+        
+    
+    
+            marker_e9e50921df4ae492feab765015319c97.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Yellow-eyed Penguin<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 18-04-2021<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss due to human settlements and fishing led to the extinction of the yellow-eyed penguin in India.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cca2e464419f55bf35313112ab41e64 = L.marker(
+                [10.028, 92.7604],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_def3ab1cfb7b71505c59f0666a58c3b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3cca2e464419f55bf35313112ab41e64.setIcon(icon_def3ab1cfb7b71505c59f0666a58c3b3);
+        
+    
+        var popup_02e28d4f37790670e49e79b6697a162e = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_7b3aad28058812c5cfcfbdf3c28ccf66 = $(`<div id="html_7b3aad28058812c5cfcfbdf3c28ccf66" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Andaman White-breasted Sea Eagle<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 15-02-2020<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Deforestation and hunting led to the extinction of the Andaman white-breasted sea eagle.     </div>`)[0];
+                popup_02e28d4f37790670e49e79b6697a162e.setContent(html_7b3aad28058812c5cfcfbdf3c28ccf66);
+            
+        
+
+        marker_3cca2e464419f55bf35313112ab41e64.bindPopup(popup_02e28d4f37790670e49e79b6697a162e)
+        ;
+
+        
+    
+    
+            marker_3cca2e464419f55bf35313112ab41e64.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Andaman White-breasted Sea Eagle<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 15-02-2020<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Deforestation and hunting led to the extinction of the Andaman white-breasted sea eagle.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f1e6ad76dabe7da899cfbc0e5d82656 = L.marker(
+                [22.2587, 71.1924],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_04cb549640b269128b562df9f9b42138 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f1e6ad76dabe7da899cfbc0e5d82656.setIcon(icon_04cb549640b269128b562df9f9b42138);
+        
+    
+        var popup_b842ee5e5fa9f4f1612cf3eefa4d0250 = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_d57b8447a11eb19ea3c6ebed901f95c9 = $(`<div id="html_d57b8447a11eb19ea3c6ebed901f95c9" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Indian Lion (Certain Subspecies)<br>     <b>Cause of Extinction:</b> Poaching<br>     <b>Last Sighting Date:</b> 10-07-2019<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Certain subspecies of the Indian lion became extinct due to poaching and habitat encroachment.     </div>`)[0];
+                popup_b842ee5e5fa9f4f1612cf3eefa4d0250.setContent(html_d57b8447a11eb19ea3c6ebed901f95c9);
+            
+        
+
+        marker_2f1e6ad76dabe7da899cfbc0e5d82656.bindPopup(popup_b842ee5e5fa9f4f1612cf3eefa4d0250)
+        ;
+
+        
+    
+    
+            marker_2f1e6ad76dabe7da899cfbc0e5d82656.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Indian Lion (Certain Subspecies)<br>
+    <b>Cause of Extinction:</b> Poaching<br>
+    <b>Last Sighting Date:</b> 10-07-2019<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Certain subspecies of the Indian lion became extinct due to poaching and habitat encroachment.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_827a8358510d700a91ac50c25a66bb60 = L.marker(
+                [7.247, 93.83],
+                {}
+            ).addTo(marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6);
+        
+    
+            var icon_18f80a846ab06348b153d2685d3e144b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_827a8358510d700a91ac50c25a66bb60.setIcon(icon_18f80a846ab06348b153d2685d3e144b);
+        
+    
+        var popup_6834c93b9dc47a6f91e918aa8ab6426e = L.popup({"maxWidth": 300, "minWidth": 150});
+
+        
+            
+                var html_56b09136023a512a4d13e14bbf48335a = $(`<div id="html_56b09136023a512a4d13e14bbf48335a" style="width: 100.0%; height: 100.0%;">     <b>Species:</b> Nicobar Striped Palm Civet<br>     <b>Cause of Extinction:</b> Habitat Loss<br>     <b>Last Sighting Date:</b> 30-11-2018<br>     <b>Historical Range:</b> India<br>     <b>Description:</b> Habitat loss on the Nicobar Islands led to the extinction of the Nicobar striped palm civet.     </div>`)[0];
+                popup_6834c93b9dc47a6f91e918aa8ab6426e.setContent(html_56b09136023a512a4d13e14bbf48335a);
+            
+        
+
+        marker_827a8358510d700a91ac50c25a66bb60.bindPopup(popup_6834c93b9dc47a6f91e918aa8ab6426e)
+        ;
+
+        
+    
+    
+            marker_827a8358510d700a91ac50c25a66bb60.bindTooltip(
+                `<div>
+                     
+    <b>Species:</b> Nicobar Striped Palm Civet<br>
+    <b>Cause of Extinction:</b> Habitat Loss<br>
+    <b>Last Sighting Date:</b> 30-11-2018<br>
+    <b>Historical Range:</b> India<br>
+    <b>Description:</b> Habitat loss on the Nicobar Islands led to the extinction of the Nicobar striped palm civet.
+    
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_a01469e2ed4825f9f9b3eabfbbdacfb6.addTo(map_5ffe624e1f2e3b29209c4094154ed04b);
+        
+</script>
+</html>
